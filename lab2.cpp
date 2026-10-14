@@ -125,25 +125,85 @@ while (fahr <= limit) { //wykonuj petle dopoki wartosc fahr jest <= od zmiennej 
 */
 // zadanie 9
 
-{
+/*{
     int n;
     int c=0;
           cout << " podaj wartosc n:";
              cin >> n;
-    
+             if (n <= 0) {
+        cout << "Blad: n musi byc wieksze od 0!" << endl;
+        return 1;
+    }
     for ( c = 0; c <= 100; c++)
     {
-       
-     
-       
+
+
+
         if (c%n == 0) {
             cout << c << endl;
         }
-        else 
+        else
         {
             cout << " ";
 
         }
     }
 
-}
+}*/ // kod, który wyświetla liczzby, które są bez reszty podzielne przez n oraz należą do przedziału z zakresu [0,100]
+
+// zadanie 10
+
+/*{
+    int n;
+    int c = 0;
+    int licznik = 0;
+          cout << " podaj wartosc n: ";
+             cin >> n;
+             if (n <= 0) {
+                 cout << "Blad: n musi byc wieksze od 0!" << endl;
+                 return 1;
+             }
+             
+             for (c = 0; c <= 100; c++)
+             {
+                 if (c % n == 0) {
+                     licznik = licznik + 1;  
+                 
+                 }
+             
+             }
+             cout << " W przedziale [0,100] jest " << licznik << " liczb podzielnych przez n " << endl;
+             return 0;
+*/ // kod, który zlicza liczby w przedziale [0,100], które są podzielne przez n 
+
+// zadanie 11 
+
+/*{
+    int a, b; 
+    cout << "Podaj wartosc calkowita a: " << endl;
+         cin >> a;
+    cout << "Podaj wartosc calkowita b: " << endl;
+         cin >> b;
+         
+         int start, end;
+
+         if (a < b) 
+         {
+             start = a; 
+             end = b; 
+         }
+         else { 
+             start = b;
+             end = a;
+         }
+         cout << "Liczby podzielne przez 3 w przedziale [" << start << "," << end << "]: " << endl;
+         for (int i = start; i <= end; i++) {  
+          
+             if (i % 3 == 0) {
+                 cout << i << endl;
+             }
+         }
+         return 0;
+}*/ 
+
+// zadanie 12
